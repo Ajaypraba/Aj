@@ -1,0 +1,391 @@
+1.Which SQL keyword retrieves all columns from a table?
+A) ALL
+B) *
+C) COLUMN
+D) SHOW
+
+2.Which clause would you use to filter records based on a condition?
+A) SELECT
+B) DISTINCT
+C) WHERE
+D) FROM 
+
+3.Which of the following is used for column filtering in SQL?
+A) WHERE
+B) SELECT
+C) FROM 
+D) DISTINCT
+
+4.What does 'Selection' in SQL refer to?
+A) Selecting a specific database
+B) Retrieving specific columns
+C) Retrieving specific rows based on a condition
+D) Removing duplicate rows
+
+5.What will be the output of the following query?
+  SELECT ENAME FROM WHERE DEPTNO=10;
+A)ALL THE EMPLOYEES NAMES
+B)NAME AND DEPTNO OF EMPLOYEES
+C)NAME OF EMPLOYEES WHO ARE WORKING IN DETPNO'10'
+D)An error because no table is specified 
+
+6. What is the output of the following query?
+ SELECT * FROM EMP WHERE DEPTNO 10 OR DETPNO=30;
+A)DETAILS OF ALL THE EMPLOYEES
+B)EMP DETAILS FROM DEPT 10 AND 30 
+C)EMP DETAILS FROM DEPT 10 ONLY
+D)EMP DETAILS FROM DEPT 10 OR 30 
+
+7.What does the NOT operator do in SQL?
+A) Selects NULL values
+B) Excludes rows that match a condition
+C) Shows all rows
+D) Removes duplicate rows
+
+8.Which of the following query returns employees WHO are from the detpno 30 and earn more than 3000.
+A)SELECT * FROM EMP WHERE DEPTNO =30 OR SAL>3000;
+B)SELECT * FROM EMP WHERE DEPTNO=30,SAL>3000;
+C)SELECT * FROM EMP WHERE DEPTNO=30 and SAL>3000;
+D)SELECT * FROM EMP AND DEPTNO=30 AND SAL>3000;
+
+9.Which of the following conditions is equivalent to:
+  WHERE NOT JOB='MANAGER';
+A)WHERE JOB='MANAGER';
+B)WHERE JOB>='MANAGER';
+C)WHERE JOB<>'MANAGER';
+D)NONE OF THE ABOVE
+
+10.Which SQL clause is used for projection?
+A) SELECT
+B) WHERE
+C) GROUP BY
+D)NONE OF THE ABOVE
+
+11.What does the SQL LIKE operator do?
+a) Compares numbers
+b) Compares strings exactly
+c) Searches for a specified pattern in a column
+d) Joins tables
+
+12. Which of the following SQL statements is correct to check if a column value is NULL?
+a) WHERE column = NULL
+b) WHERE column IS NULL
+c) WHERE column == NULL
+d) WHERE column LIKE NULL
+
+13.Which query correctly selects employees whose name contain more than five letter 
+a)select ename from emp where ename like '_ _ _ _ _%';
+b)select ename from emp where ename like '_ _ _ _ _';
+c)select ename from emp where ename like '_ _ _ _ _ _%';
+d)select ename from emp where ename like '_ _ _ _ _ _';
+
+14. Which of the following SQL queries returns all employees whose salary less than 1000 and more than 4000
+a)select * from emp where sal between 4000 and 1000;
+b)select * from emp where sal between 4001 and 1001;
+c)select * from emp where sal not between 1000 and 4000;
+d)NONE OF THE ABOVE
+
+15.Which query selects employees who are hiredate after 80 and before 87.
+a)select * from emp where hiredate>80 and hiredate<87;
+b)select * from emp where hiredate between 81 and 86; 
+c)select * from emp where hiredate between '31-DEC-80' AND '01-JAN-87';
+d)select * from emp where hiredate between '01-JAN-81' AND '31-DEC-86';
+
+16. What will this query output?
+  SELECT 1 FROM EMP; 
+a) Returns 1 row with the value 1
+b) Returns a column of 1s equal to the number of rows in the EMP table
+c) Returns an error
+d) Returns the first record from the EMP table
+
+17.What does this query do?
+   SELECT * FROM emp WHERE ename LIKE '__N%';
+a) Names starting with “n”
+b) Names that have 'n' as the third character
+c) Names that contain exactly three letters
+d) Names ending with “n”
+
+18.What will this query output?
+      select ename,max(sal) from emp;
+a) It will return the employee name who has the highest salary
+b) It will return an error
+c) It will return the maximum salary and the first employee in the table
+d) It will return all employee names and their salaries
+
+19.What will the following SQL query do?
+  SELECT ename FROM emp WHERE sal = MAX(sal);
+a) Returns the name of the employee with the highest salary
+b) Returns all employee names
+c) Syntax Error due to use of aggregate function in WHERE
+d) Returns name of the employee with the lowest salary
+
+20.What will be the result of executing the following SQL statement?
+   SELECT MAX(*) FROM emp;
+a) It will return the highest salary from the emp table
+b) It will return the maximum number of employees
+c) It will return NULL
+d) It will throw an error
+
+21.What will be the result of the following SQL query?
+      SELECT MAX(sal, comm) FROM emp;
+a) The highest value between salary and commission for each row
+b) The maximum value from both columns sal and comm
+c) The maximum salary or commission from the emp table
+d) Error – MAX function accepts only one argument
+
+22. Which condition will return TRUE only if both conditions are TRUE?
+a) OR
+b) AND
+c) NOT
+d) XOR
+
+23.What is the purpose of the COUNT(*) function?
+a) Counts only non-null values
+b) Counts all rows including NULLs
+c) Counts only numeric values
+d) Returns the sum of a column
+
+24.Which function returns the average of a numeric column?
+a) MAX()
+b) MIN()
+c) AVG()
+d) SUM()
+
+25.Which function returns the smallest value in a column?
+a) MAX()
+b) LEAST()
+c) MIN()
+d) LOWER()
+
+26.What will this query return?
+SELECT COUNT(*), AVG(salary) FROM emp;
+a) Error
+b) Count of salaries and average salary
+c) Only average salary
+d) Only total employees
+
+27. What is the output of this query?
+ SELECT MAX(sal)-MIN(sal) FROM emp;
+
+a) Total of max and min salary
+b) Difference between highest and lowest salary
+c) Average salary
+d) Error
+
+28.What is the alternative name of Multi-Row Functions in SQL?
+a) Aggregate Functions
+b) Scalar Functions
+c) Column Functions
+d) Row-Level Functions
+
+29.What is the alternative name of Single-Row Functions in SQL?
+a) Scalar Functions
+b) Aggregate Functions
+c) Group Functions
+d) Multi-Row Functions
+
+30.Multi-Row functions execute on:
+a) Each row individually
+b) A group of rows
+c) Only numeric columns
+d) Only string columns
+==========================================XXXXXXXXXXXXXXXX=======================
+
+
+1.WHICH SQL KEYWORD RETRIEVES ALL COLUMNS FROM A TABLE?
+A) ALL
+B) *
+C) COLUMN
+D) SHOW
+
+2.WHICH CLAUSE WOULD YOU USE TO FILTER RECORDS BASED ON A CONDITION?
+A) SELECT
+B) DISTINCT
+C) WHERE
+D) FROM 
+
+3.WHICH OF THE FOLLOWING IS USED FOR COLUMN FILTERING IN SQL?
+A) WHERE
+B) SELECT
+C) FROM 
+D) DISTINCT
+
+4.WHAT DOES 'SELECTION' IN SQL REFER TO?
+A) SELECTING A SPECIFIC DATABASE
+B) RETRIEVING SPECIFIC COLUMNS
+C) RETRIEVING SPECIFIC ROWS BASED ON A CONDITION
+D) REMOVING DUPLICATE ROWS
+
+5.WHAT WILL BE THE OUTPUT OF THE FOLLOWING QUERY?
+  SELECT ENAME FROM WHERE DEPTNO=10;
+A)ALL THE EMPLOYEES NAMES
+B)NAME AND DEPTNO OF EMPLOYEES
+C)NAME OF EMPLOYEES WHO ARE WORKING IN DETPNO'10'
+D)AN ERROR BECAUSE NO TABLE IS SPECIFIED 
+
+6. WHAT IS THE OUTPUT OF THE FOLLOWING QUERY?
+ SELECT * FROM EMP WHERE DEPTNO 10 OR DETPNO=30;
+A)DETAILS OF ALL THE EMPLOYEES
+B)EMP DETAILS FROM DEPT 10 AND 30 
+C)EMP DETAILS FROM DEPT 10 ONLY
+D)EMP DETAILS FROM DEPT 10 OR 30 
+
+7.WHAT DOES THE NOT OPERATOR DO IN SQL?
+A) SELECTS NULL VALUES
+B) EXCLUDES ROWS THAT MATCH A CONDITION
+C) SHOWS ALL ROWS
+D) REMOVES DUPLICATE ROWS
+
+8.WHICH OF THE FOLLOWING QUERY RETURNS EMPLOYEES WHO ARE FROM THE DETPNO 30 AND EARN MORE THAN 3000.
+A)SELECT * FROM EMP WHERE DEPTNO =30 OR SAL>3000;
+B)SELECT * FROM EMP WHERE DEPTNO=30,SAL>3000;
+C)SELECT * FROM EMP WHERE DEPTNO=30 AND SAL>3000;
+D)SELECT * FROM EMP AND DEPTNO=30 AND SAL>3000;
+
+9.WHICH OF THE FOLLOWING CONDITIONS IS EQUIVALENT TO:
+  WHERE NOT JOB='MANAGER';
+A)WHERE JOB='MANAGER';
+B)WHERE JOB>='MANAGER';
+C)WHERE JOB<>'MANAGER';
+D)NONE OF THE ABOVE
+
+10.WHICH SQL CLAUSE IS USED FOR PROJECTION?
+A) SELECT
+B) WHERE
+C) GROUP BY
+D) NONE OF THE ABOVE
+
+11.WHAT DOES THE SQL LIKE OPERATOR DO?
+A) COMPARES NUMBERS
+B) COMPARES STRINGS EXACTLY
+C) SEARCHES FOR A SPECIFIED PATTERN IN A COLUMN
+D) JOINS TABLES
+
+12. WHICH OF THE FOLLOWING SQL STATEMENTS IS CORRECT TO CHECK IF A COLUMN VALUE IS NULL?
+A) WHERE COLUMN = NULL
+B) WHERE COLUMN IS NULL
+C) WHERE COLUMN == NULL
+D) WHERE COLUMN LIKE NULL
+
+13.WHICH QUERY CORRECTLY SELECTS EMPLOYEES WHOSE NAME CONTAIN MORE THAN FIVE LETTER 
+A)SELECT ENAME FROM EMP WHERE ENAME LIKE '_ _ _ _ _%';
+B)SELECT ENAME FROM EMP WHERE ENAME LIKE '_ _ _ _ _';
+C)SELECT ENAME FROM EMP WHERE ENAME LIKE '_ _ _ _ _ _%';
+D)SELECT ENAME FROM EMP WHERE ENAME LIKE '_ _ _ _ _ _';
+
+14. WHICH OF THE FOLLOWING SQL QUERIES RETURNS ALL EMPLOYEES WHOSE SALARY LESS THAN 1000 AND MORE THAN 4000
+A)SELECT * FROM EMP WHERE SAL BETWEEN 4000 AND 1000;
+B)SELECT * FROM EMP WHERE SAL BETWEEN 4001 AND 1001;
+C)SELECT * FROM EMP WHERE SAL NOT BETWEEN 1000 AND 4000;
+D)NONE OF THE ABOVE
+
+15.WHICH QUERY SELECTS EMPLOYEES WHO ARE HIREDATE AFTER 80 AND BEFORE 87.
+A)SELECT * FROM EMP WHERE HIREDATE>80 AND HIREDATE<87;
+B)SELECT * FROM EMP WHERE HIREDATE BETWEEN 81 AND 86; 
+C)SELECT * FROM EMP WHERE HIREDATE BETWEEN '31-DEC-80' AND '01-JAN-87';
+D)SELECT * FROM EMP WHERE HIREDATE BETWEEN '01-JAN-81' AND '31-DEC-86';
+
+16. WHAT WILL THIS QUERY OUTPUT?
+  SELECT 1 FROM EMP; 
+A) RETURNS 1 ROW WITH THE VALUE 1
+B) RETURNS A COLUMN OF 1S EQUAL TO THE NUMBER OF ROWS IN THE EMP TABLE
+C) RETURNS AN ERROR
+D) RETURNS THE FIRST RECORD FROM THE EMP TABLE
+
+17.WHAT DOES THIS QUERY DO?
+   SELECT * FROM EMP WHERE ENAME LIKE '__N%';
+A) NAMES STARTING WITH “N”
+B) NAMES THAT HAVE 'N' AS THE THIRD CHARACTER
+C) NAMES THAT CONTAIN EXACTLY THREE LETTERS
+D) NAMES ENDING WITH “N”
+
+18.WHAT WILL THIS QUERY OUTPUT?
+      SELECT ENAME,MAX(SAL) FROM EMP;
+A) IT WILL RETURN THE EMPLOYEE NAME WHO HAS THE HIGHEST SALARY
+B) IT WILL RETURN AN ERROR
+C) IT WILL RETURN THE MAXIMUM SALARY AND THE FIRST EMPLOYEE IN THE TABLE
+D) IT WILL RETURN ALL EMPLOYEE NAMES AND THEIR SALARIES
+
+19.WHAT WILL THE FOLLOWING SQL QUERY DO?
+  SELECT ENAME FROM EMP WHERE SAL = MAX(SAL);
+A) RETURNS THE NAME OF THE EMPLOYEE WITH THE HIGHEST SALARY
+B) RETURNS ALL EMPLOYEE NAMES
+C) SYNTAX ERROR DUE TO USE OF AGGREGATE FUNCTION IN WHERE
+D) RETURNS NAME OF THE EMPLOYEE WITH THE LOWEST SALARY
+
+20.WHAT WILL BE THE RESULT OF EXECUTING THE FOLLOWING SQL STATEMENT?
+   SELECT MAX(*) FROM EMP;
+A) IT WILL RETURN THE HIGHEST SALARY FROM THE EMP TABLE
+B) IT WILL RETURN THE MAXIMUM NUMBER OF EMPLOYEES
+C) IT WILL RETURN NULL
+D) IT WILL THROW AN ERROR
+
+21.WHAT WILL BE THE RESULT OF THE FOLLOWING SQL QUERY?
+      SELECT MAX(SAL, COMM) FROM EMP;
+A) THE HIGHEST VALUE BETWEEN SALARY AND COMMISSION FOR EACH ROW
+B) THE MAXIMUM VALUE FROM BOTH COLUMNS SAL AND COMM
+C) THE MAXIMUM SALARY OR COMMISSION FROM THE EMP TABLE
+D) ERROR – MAX FUNCTION ACCEPTS ONLY ONE ARGUMENT
+
+22. WHICH CONDITION WILL RETURN TRUE ONLY IF BOTH CONDITIONS ARE TRUE?
+A) OR
+B) AND
+C) NOT
+D) XOR
+
+23.WHAT IS THE PURPOSE OF THE COUNT(*) FUNCTION?
+A) COUNTS ONLY NON-NULL VALUES
+B) COUNTS ALL ROWS INCLUDING NULLS
+C) COUNTS ONLY NUMERIC VALUES
+D) RETURNS THE SUM OF A COLUMN
+
+24.WHICH FUNCTION RETURNS THE AVERAGE OF A NUMERIC COLUMN?
+A) MAX()
+B) MIN()
+C) AVG()
+D) SUM()
+
+25.WHICH FUNCTION RETURNS THE SMALLEST VALUE IN A COLUMN?
+A) MAX()
+B) LEAST()
+C) MIN()
+D) LOWER()
+
+26.WHAT WILL THIS QUERY RETURN?
+SELECT COUNT(*), AVG(SALARY) FROM EMP;
+A) ERROR
+B) COUNT OF SALARIES AND AVERAGE SALARY
+C) ONLY AVERAGE SALARY
+D) ONLY TOTAL EMPLOYEES
+
+27. WHAT IS THE OUTPUT OF THIS QUERY?
+ SELECT MAX(SAL)-MIN(SAL) FROM EMP;
+
+A) TOTAL OF MAX AND MIN SALARY
+B) DIFFERENCE BETWEEN HIGHEST AND LOWEST SALARY
+C) AVERAGE SALARY
+D) ERROR
+
+28.WHAT IS THE ALTERNATIVE NAME OF MULTI-ROW FUNCTIONS IN SQL?
+A) AGGREGATE FUNCTIONS
+B) SCALAR FUNCTIONS
+C) COLUMN FUNCTIONS
+D) ROW-LEVEL FUNCTIONS
+
+29.WHAT IS THE ALTERNATIVE NAME OF SINGLE-ROW FUNCTIONS IN SQL?
+A) SCALAR FUNCTIONS
+B) AGGREGATE FUNCTIONS
+C) GROUP FUNCTIONS
+D) MULTI-ROW FUNCTIONS
+
+30.MULTI-ROW FUNCTIONS EXECUTE ON:
+A) EACH ROW INDIVIDUALLY
+B) A GROUP OF ROWS
+C) ONLY NUMERIC COLUMNS
+D) ONLY STRING COLUMNS
+
+ 
+   
+
+ 
+   
